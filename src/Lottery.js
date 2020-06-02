@@ -5,7 +5,7 @@ import "./Lottery.css";
 class Lottery extends Component {
   static defaultProps = {
     title: "Lotto",
-    maxBalls: 6,
+    numBalls: 6,
     maxNum: 40,
   };
 
@@ -13,12 +13,13 @@ class Lottery extends Component {
     super(props);
     this.state = {
       // create empty slots for initial load
-      nums: Array.from({ length: this.props.maxBalls }),
+      nums: Array.from({ length: this.props.numBalls }),
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   generate() {
+    // immutable set state via map
     this.setState((curState) => ({
       nums: curState.nums.map(
         (n) => Math.floor(Math.random() * this.props.maxNum) + 1
