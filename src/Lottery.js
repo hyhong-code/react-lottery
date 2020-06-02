@@ -33,7 +33,7 @@ class Lottery extends Component {
 
   render() {
     return (
-      <div>
+      <div className="Lottery">
         <h1>{this.props.title}</h1>
         <div>
           {this.state.nums.map((num) => (
