@@ -1,6 +1,6 @@
 # React practice project
 
-### Practiced updating states useing pure functions and callback this.setState pattern.
+### Practiced updating states with immutable pure functions and callback this.setState pattern.
 
 #### Previews:
 
