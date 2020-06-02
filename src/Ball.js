@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import "./Ball.css";
 
 class Ball extends Component {
   render() {
-    return <div>20</div>;
+    return <div className="Ball">{this.props.number}</div>;
   }
 }
 

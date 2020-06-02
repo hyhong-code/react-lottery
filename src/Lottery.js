@@ -7,10 +7,10 @@ class Lottery extends Component {
       <div>
         <h1>Title</h1>
         <div>
-          <Ball />
-          <Ball />
-          <Ball />
-          <Ball />
+          <Ball number={3} />
+          <Ball number={2} />
+          <Ball number={4} />
+          <Ball number={5} />
         </div>
         <button>Generate</button>
       </div>
